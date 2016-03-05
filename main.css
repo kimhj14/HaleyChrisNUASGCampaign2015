@@ -1,0 +1,364 @@
+body {
+	background-color: white;
+    font-weight: bold !important;
+}
+.center-wrap {
+	width: 80%;
+	min-height: 100%;
+	height: auto !important;
+    height: 100%;
+	margin: 0 auto; /* the bottom margin is the negative value of the footer's height */
+}
+@media(min-width: 915px) {
+    .center-wrap {
+        width: 90%;
+    }
+}
+
+/* NAVBAR CSS */
+nav {
+	margin-bottom: 0px !important;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+    border-color: white !important; /*same color as background color*/
+    background: white !important;
+}
+.navbar li {
+    text-align: center;
+}
+.nav > li > a {
+    padding: 10px 10px;
+}
+.navbar-default {
+}
+#logo {
+	height: 160px;
+    padding-right: 10px;
+}
+#navbar {
+    font-size: 20px;
+    width: 100%;
+    margin-right: 8%;  
+}
+@media (min-width: 750px){
+    #navbar {
+        margin-top: 60px;
+    }
+}
+
+/* MAIN CONTENT CSS */
+h1, h2, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+p, li {
+    font-family: 'Roboto Slab', serif;
+}
+@media (min-width: 768px) and (max-width: 1106px){
+    .main-content, .about-content, .vision-content, .commitment-content, .endorsements-content, .media-content, .connect-content, .updates-content{
+        padding-top: 180px !important; /*messes up in the "middle" sized screens*/
+        text-align: center;
+    }
+}
+@media (min-width: 0px) and (max-width: 768px){
+    .main-content, .about-content, .vision-content, .commitment-content, .endorsements-content, .media-content, .connect-content, .updates-content{
+        padding-top: 200px !important; /*messes up in the "middle" sized screens*/
+        text-align: center;
+    }
+}
+.main-content, .about-content, .vision-content, .commitment-content, .endorsements-content, .media-content, .connect-content, .updates-content{
+	padding-top: 100px; /*messes up in the "middle" sized screens*/
+	text-align: center;
+}
+.main-content h1 {
+    color: #19bbbc;
+}
+.main-bottom-content h2 {
+    text-align: center;
+}
+.main-bottom-content a {
+    color: #19bbbc !important;
+}
+.main-bottom-content a:hover {
+    color: #a8ce54 !important;
+    text-decoration: none !important;
+}
+.endorse-btn {
+    margin-left: 4px;
+    border-radius: 15px;
+    padding: 8px 20px;
+    font-size: 18px;
+    color: white !important;
+    background-color: #19bbbc !important;
+    border-color: #19bbbc !important;
+}
+.endorse-btn:hover {
+    background-color: #a8ce54 !important;
+    border-color: #a8ce54 !important;
+}
+#white-arrow {
+    position: relative;
+    z-index: 3;
+    margin-top: -50px;
+    height: 40px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*endorsement form*/
+#form-logo {
+    width: 300px !important;
+    margin: 0 auto;
+}
+#endorsement-form-header h1 {
+    color: #19bbbc;
+    padding: 0;
+    margin: 0;
+}
+.endorsement-form {
+    width: 50%;
+    margin-bottom: 4em;
+    border: 0.1em solid #a8ce54;
+    border-radius: 2em;
+}
+#endorsement-form-information label {
+    color: #19bbbc;
+}
+.endorsement-form-body {
+    font-family: 'Roboto', sans-serif;
+    padding: 2em 3em;
+    max-width: 90%;
+}
+.endorsement-form .form-group {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+.endorsement-form .form-group .form-control {
+    margin: 1em; 
+}
+#submit {
+    border: none !important;
+}
+#submit:focus {
+    outline: none !important;
+}
+
+/* CAROUSEL CSS */
+#myCarousel {
+	width: 100% !important;
+	margin: 0 !important;
+}
+.carousel {
+	height: 500px;
+	margin-bottom: 60px;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+	height: 500px;
+	background-color: #777;
+}
+.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+}
+.carousel-indicators {
+	display: none;
+}
+
+@media(min-width: 0)and(max-width:750px){ /*SMALL CAROUSEL CSS*/
+    .carousel {
+        height: 300px;
+        margin-bottom: 60px;
+    }
+    .carousel .item {
+        height: 300px; /* Declare heights because of positioning of img element */
+        background-color: #777;
+    }
+    .carousel-inner > .item > img {
+        position: absolute;
+        min-width: 100%;
+        height: 300px !important;
+    }
+}
+
+/* ABOUT CSS */
+.about1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.about-content-text li, p {
+    font-size: 16px;
+    padding: 5px 30px;
+    text-align: left;
+}
+.about-content-text li {
+    padding-left: 60px; 
+}
+.column-bio li, p {
+    font-size: 16px;
+    padding: 5px 0;
+    text-align: left;
+}
+.column-bio li {
+    padding-left: 60px;
+}
+.about2 {
+    width: 300px;
+    margin: 0 auto;
+}
+.morelink, .less{
+    font-family: 'Roboto Slab', serif;
+}
+
+/* ENDORSEMENTS CSS */
+.endorse-img {
+	margin: 0px;
+	padding: 0px;
+}
+/*@media (min-width:750px) {
+   .endorse-img {
+    max-height: 240px !important;
+    width: 100% !important;
+    } 
+}*/
+.articles {
+    overflow: hidden;
+}
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 15px;
+}
+.endorse-img img {
+    height: 300px;
+    width: 300px;
+}
+.endorse-img {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.article-overlay {
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 0.5;
+    transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    cursor: pointer;
+}
+.article-overlay:hover {
+    opacity: 1;
+}
+/*pop-up (modal)*/
+.article-modal-image {
+    /* only takes up a third of the modal this way*/
+    max-width: 100%;
+}
+.testimony {
+    border: solid 1px #a8ce54;
+ }
+
+
+/* VISION & COMMITMENT CSS */
+@media (min-width: 768px) and (max-width: 1199px){
+    .roll-link {
+        padding-top: 200px !important;
+    }
+}
+.vision-introtext {
+    margin: 0 15%;
+
+}
+.vision-introtext p {
+    text-decoration: none;
+    text-align: center;
+}
+.roll-link {
+    padding-top: 200px; /*to make sure it's not covered by the fixed navbar*/
+    text-decoration: none !important;
+    color: #19bbbc !important;
+}
+.roll-link:hover {
+    color: #19bbbc !important;
+}
+.vision-box {
+    padding: 0px 0px;
+    margin: 0 auto;
+}
+.vision-box img {
+    height: 160px;
+}
+.vision-row1 {
+    width: 80%;
+    margin: 0 auto;
+}
+.vision-row2 {
+    width: 70%;
+    margin: 0 auto;
+}
+.text-box {
+    border: solid 1px #a8ce54;
+    margin-bottom: 20px;
+}
+.text-box h1 {
+    color: #19bbbc;
+    padding-bottom: 5px;
+}
+.text-box h3 {
+    color: #a8ce54;
+    text-align: left;
+    padding-left: 30px;
+}
+.text-box li, p {
+    font-size: 16px;
+    padding: 5px 30px;
+    text-align: left;
+}
+.commitment-text li, p {
+    font-size: 16px;
+    padding: 5px 30px;
+    text-align: left;
+}
+.text-center {
+    padding-left: 80px !important;
+}
+.text-box p:last-child {
+    padding-bottom: 10px;
+}
+
+/* CONNECT CSS */
+.connect-icons img {
+    height: 120px;
+    padding: 10px 20px;
+}
+.social-icons img {
+    height: 160px;
+    padding: 20px 30px;
+}
+
+/* FOOTER CSS */
+.footer, .push {
+    height: 30px; /* .push must be the same height as .footer */
+}
+.footer {
+	background-color: #ECECF2;
+}
+.footer p {
+    text-align: center;
+    padding-top: 5px;
+}
+
